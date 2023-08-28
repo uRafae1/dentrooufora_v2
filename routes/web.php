@@ -27,3 +27,14 @@ Route::post('cad-categoria/salvar', [App\Http\Controllers\CategoriaController::c
 Route::get('/cad-candidato', [App\Http\Controllers\CandidatoController::class, 'index'])->name('cad-candidato');
 Route::post('cad-candidato/salvar', [App\Http\Controllers\CandidatoController::class, 'salvar']);
 
+Route::get('/cad-votacao', [App\Http\Controllers\VotacaoController::class, 'criar'])->name('cad-votacao');
+Route::post('cad-votacao/salvar', [App\Http\Controllers\VotacaoController::class, 'salvar']);
+
+Route::get('/votacao', [App\Http\Controllers\VotacaoController::class, 'lista'])->name('lista-votacoes');
+Route::get('/votacao/{hash}', [App\Http\Controllers\VotacaoController::class, 'index'])->name('votacao');
+
+Route::get('/cad-categoria-candidato', [App\Http\Controllers\CategoriaCandidatoController::class, 'index'])->name('categoria-candidato');
+Route::post('cad-categoria-candidato/salvar', [App\Http\Controllers\CategoriaCandidatoController::class, 'salvar']);
+
+
+

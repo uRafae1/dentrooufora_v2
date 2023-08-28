@@ -13,10 +13,13 @@
                                 {{ session('status') }}
                             </div>
                         @endif
-                        
-                        <a class="btn btn-primary" href="/cad-categoria" role="button">Cadastrar categoria</a>
-                        <a class="btn btn-primary" href="/cad-candidato" role="button">Cadastrar candidato</a>
-                        <a class="btn btn-primary" href="/cad-votacao" role="button">Cadastrar votação</a>
+                        <div class="mb-8" style="display:flex; flex-direction:column">
+                            <a class="btn btn-primary" href="/cad-categoria" role="button" style="margin-bottom: 10px">Cadastrar categoria</a>
+                            <a class="btn btn-primary" href="/cad-candidato" role="button" style="margin-bottom: 10px">Cadastrar candidato</a>
+                            <a class="btn btn-primary" href="/cad-votacao" role="button" style="margin-bottom: 10px">Cadastrar votação</a>
+                            <a class="btn btn-primary" href="/cad-categoria-candidato" role="button" style="margin-bottom: 10px">Cadastrar um candidato em uma categoria</a>
+                            <a class="btn btn-primary" href="/votacao" role="button" style="margin-bottom: 10px">Lista de votações</a>
+                        </div>
                     </div>
                 </div>
             </div>
